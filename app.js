@@ -39,6 +39,8 @@ femaleBtn.addEventListener("click", function () {
   }
 });
 
+
+
 subtractAge.addEventListener("click", function () {
   let i = Number(age.value);
   age.value = --i;
