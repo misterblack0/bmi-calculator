@@ -34,7 +34,6 @@
         <div class="height">
           <h1 class="heading">Height</h1>
           <div class="height-value">
-            
             <p class="range-slider__value"></p>
             <span>cm</span>
           </div>
@@ -50,32 +49,27 @@
           </div>
         </div>
 
-        <div class="weight-age">
-          <div class="weight">
-            <h1 class="heading">weight</h1>
-            <input type="number" value="0" id="weight" />
-            <div class="btn-wrapper">
-              <button id="subtractWeight" class="btn2">-</button>
-              <button id="addWeight" class="btn2">+</button>
-            </div>
-          </div>
-
-          <div class="age">
-            <h1 class="heading">age</h1>
-            <input type="number" value="0" id="age" />
-            <div class="btn-wrapper">
-              <button id="subtractAge" class="btn2">-</button>
-              <button id="addAge" class="btn2">+</button>
-            </div>
+        <div class="weight">
+          <h1 class="heading">weight</h1>
+          <input type="number" value="0" id="weight" />
+          <div class="btn-wrapper">
+            <button id="decrementWeight" class="btn2">-</button>
+            <button id="incrementWeight" class="btn2">+</button>
           </div>
         </div>
       </div>
+
+      <div class="wrapper-result">
+        <p id="result-category"></p>
+        <p id="result"></p>
+        <p class="heading">Normal BMI range:</p>
+        <p class="default-bmi">18.5 - 25 kg/m2</p>
+        <p id="result-msg"></p>
+      </div>
+
       <button class="btn">calculate your bmi</button>
+      <button class="btn3">re-calculate your bmi</button>
     </div>
-
-    <p id="result"></p>
-
-    <p id="bmi-category"></p>
 
     <script src="./app.js"></script>
   </body>
