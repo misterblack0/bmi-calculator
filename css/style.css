@@ -58,6 +58,11 @@ body {
   fill: #fff;
 }
 
+.icon-active {
+  transition: all 0.2s;
+  fill: #1abc9c;
+}
+
 .gender {
   width: 100%;
   display: flex;
@@ -73,17 +78,15 @@ body {
   padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .gender div:hover {
   cursor: pointer;
-  color: #1abc9c;
-  fill: #1abc9c;
 }
 
-.gender div:hover > svg {
-  fill: #1abc9c;
+.gender-active {
+  color: #1abc9c;
 }
 
 .height {
