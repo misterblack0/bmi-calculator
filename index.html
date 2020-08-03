@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h2>Bmi calculator</h2>
+
+        <div class="gender">
+          <div class="male">
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#icon-male"></use>
+            </svg>
+            <h3>male</h3>
+          </div>
+          <div class="female">
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#icon-female"></use>
+            </svg>
+            <h3>female</h3>
+          </div>
+        </div>
+
+        <div class="height">
+          <h1 class="heading">Height</h1>
+          <div class="height-value">
+            
+            <p class="range-slider__value"></p>
+            <span>cm</span>
+          </div>
+
+          <div class="range-slider">
+            <input
+              class="range-slider__range"
+              type="range"
+              value="150"
+              min="100"
+              max="250"
+            />
+          </div>
+        </div>
+
+        <div class="weight-age">
+          <div class="weight">
+            <h1 class="heading">weight</h1>
+            <input type="number" value="0" id="weight" />
+            <div class="btn-wrapper">
+              <button id="subtractWeight" class="btn2">-</button>
+              <button id="addWeight" class="btn2">+</button>
+            </div>
+          </div>
+
+          <div class="age">
+            <h1 class="heading">age</h1>
+            <input type="number" value="0" id="age" />
+            <div class="btn-wrapper">
+              <button id="subtractAge" class="btn2">-</button>
+              <button id="addAge" class="btn2">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn">calculate your bmi</button>
+    </div>
+
+    <p id="result"></p>
+
+    <p id="bmi-category"></p>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
