@@ -49,9 +49,9 @@ body {
 }
 
 .wrapper-result {
-  height: 85%;
+  height: 63%;
   text-align: center;
-  margin: 2rem 2rem;
+  margin: 10.6rem 2rem;
   background-color: #393e46;
   border-radius: 0.3rem;
   display: none;
@@ -213,7 +213,7 @@ input::-moz-focus-outer {
   margin: 0 0.5rem;
 }
 
-.btn3 {
+.btn-remake {
   width: 100%;
   height: 7rem;
   font-size: 1.5rem;
@@ -223,7 +223,6 @@ input::-moz-focus-outer {
   text-transform: uppercase;
   color: #eeeeee;
   background-color: #1abc9c;
-
   display: none;
 }
 
@@ -283,8 +282,8 @@ input::-moz-focus-outer {
 }
 
 #result-category {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 5rem;
 }
